@@ -1,0 +1,21 @@
+# IntelliJ project-specific files to ignore
+/shelf/
+/workspace.xml
+/tasks.xml
+/usage.statistics.xml
+
+# HTTP client requests (if any)
+/httpRequests/
+
+# Maven home path (system-dependent)
+/mavenHomeManager.xml
+
+# Database/data source configs
+/dataSources/
+/dataSources.local.xml
+
+# Other system/user-specific files
+/gradle.xml
+/uiDesigner.xml
+/sonarlint/
+/libraries/
