@@ -11,6 +11,6 @@ public class Main {
 
         StudentService studentService = context.getBean("studentService", StudentService.class);
 
-        studentService.registerStudent("Sanjana Reddy");
+        studentService.registerStudent("Sanjana");
     }
 }
