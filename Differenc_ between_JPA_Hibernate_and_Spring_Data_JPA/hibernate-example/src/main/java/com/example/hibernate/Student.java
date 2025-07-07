@@ -1,18 +1,14 @@
-package com.example.hibernate;
+package com.example.jpa;
 
-import org.hibernate.*;
-import org.hibernate.cfg.Configuration;
+import jakarta.persistence.*;
 
-public class HibernateMain {
-    public static void main(String[] args) {
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
-        Session session = factory.openSession();
+@Entity
+public class Student {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
 
-        session.beginTransaction();
-        session.save(new Student("Harshitha"));
-        session.getTransaction().commit();
-
-        session.close();
-        factory.close();
-    }
+    public Student() {}
+    public Student(String name) { this.name = name; }
 }
